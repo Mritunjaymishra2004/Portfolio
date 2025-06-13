@@ -247,7 +247,7 @@ img{
 .about,
 .resume,
 .portfolio,
-.blog,
+.certificate,
 .contact {
     position: absolute;
     top: 110%;
@@ -260,7 +260,7 @@ img{
     transition: all .5s ease;
 }
 
-:is(.about, .resume, .portfolio, .blog, .contact).active{
+:is(.about, .resume, .portfolio, .certificate, .contact).active{
     top: 0;
     transform: scale(1);
     z-index: 10;
@@ -387,7 +387,7 @@ img{
 
 .resume,
 .portfolio,
-.blog,
+.certificate,
 .contact{ padding: 50px 70px;}
 
 .resume-row{ display: flex;}
@@ -706,11 +706,11 @@ img{
         opacity: 1;
     }
 
-    .about, .resume, .portfolio, .blog, .contact{
+    .about, .resume, .portfolio, .certificate, .contact{
         width: 100%;
     }
 
-    .resume, .portfolio, .blog, .contact{ padding: 80px 40px;}
+    .resume, .portfolio, .certificate, .contact{ padding: 80px 40px;}
     
     .contact-info{ grid-template-columns: repeat(2, 1fr);}
 }
