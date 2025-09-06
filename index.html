@@ -1,432 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Template - About me</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-
-        <nav class="nav-mobile">
-            <div class="navbar-brand">
-                <img src="Mritunjay.jpg" alt="logo" class="brand-img">
-                <h1 class="brand-name">Mritunjay Mishra</h1>
-            </div>
-
-            <ion-icon name="menu-outline" class="menu-toggler"></ion-icon>
-        </nav>
-
-        <div class="side-bar">
-            <img src="z/Mritunjay.jpg" alt="logo" class="brand-img">
-            <h1 class="brand-name">Mritunjay <br> Mishra</h1>
-
-            <nav>
-                <ul class="nav">
-                    <li><a href="#" class="active">About</a></li>
-                    <li><a href="#">Resume</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Certificate</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+    <header class="text-center mb-8">
+        <div class="top-section">
+            <img src="assets/Mritunjay.jpg" alt="Profile Photo" class="profile-img mb-4">
+            <h1 class="text-4xl font-bold text-black mb-4">My Name is Mritunjay Mishra</h1>
+            <nav>  
+                <a href="#about" class="nav-link">About</a>
+                <a href="#qualifications" class="nav-link">Qualifications</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#hobbies" class="nav-link">Hobbies</a>
+                <a href="#resume" class="nav-link">Resume</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </nav>
+        </div>
+    </header>
 
-            <div class="social-btn-groups">
-                <a href="https://github.com/Mritunjaymishra2004" class="btn"><ion-icon name="logo-github"></ion-icon></a>
-                <a href="https://www.linkedin.com/in/mritunjay-mishra-92905a268" class="btn"><ion-icon name="logo-linkedin"></ion-icon></a>
-                <a href="https://www.whatsapp.com" class="btn"><ion-icon name="logo-whatsapp"></ion-icon></a>
-                <a href="#" class="btn"><ion-icon name="logo-facebook"></ion-icon></a>
+    <section id="about">
+        <h2 class="text-3xl font-bold mb-4 text-center">About Me</h2>
+        <p class="text-lg text-center">Hello! I am a computer science student and want to become a software developer.
+I like making websites and applications, and I am always learning new things.
+My main interests are web development, solving problems, and learning about AI and modern tools.
+
+I am looking for opportunities where I can use my skills, work on real projects, and grow as a developer. </p>
+    </section>
+
+    <section id="qualifications">
+        <h2 class="text-3xl font-bold mb-4">Qualifications</h2>
+        <ul class="list-disc pl-5">
+            <li>Bachelor's Degree in Computer Science and Engineering Speclisation with AI, Galgotias University(2022-26)</li>
+            <li>12th,   Indian Public School,Hata,Kushinagar(2019-21),   78%</li>
+            <li>10th,   Indian Public School,Hata,Kushinagar(2019-21),   73.84%</li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2 class="text-3xl font-bold mb-4">Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+                <h3>JavaScript</h3>
+                <div class="skill-bar"><div class="skill-fill" style="width: 100%;"></div></div>
             </div>
-
-            <div class="side-bar-footer">
-                <p class="copyright">&copy; 2025 All rights <br>reserved</p>
+            <div>
+                <h3>React</h3>
+                <div class="skill-bar"><div class="skill-fill" style="width: 100%;"></div></div>
+            </div>
+            <div>
+                <h3>Node.js</h3>
+                <div class="skill-bar"><div class="skill-fill" style="width: 100%;"></div></div>
+            </div>
+            <div>
+                <h3>Python</h3>
+                <div class="skill-bar"><div class="skill-fill" style="width: 100%;"></div></div>
+            </div>
+            <div>
+                <h3>CSS</h3>
+                <div class="skill-bar"><div class="skill-fill" style="width: 100%;"></div></div>
+            </div>
+            <div>
+                <h3>HTML</h3>
+                <div class="skill-bar"><div class="skill-fill" style="width: 100%;"></div></div>
             </div>
         </div>
+    </section>
 
-        <section class="about page active">
-            <div class="hero">
-                <div class="hero-img-box">
-                    <img src="z/M.jpg" alt="hero img">
-                </div>
-    
-                <div class="hero-content">
-                    <div class="hero-content-wrapper">
-                        <p class="title">Front-end Developer</p>
-                        <h1 class="name">Mritunjay Mishra</h1>
-                        <div class="description">
-                            <p>My Self  </p>
-                            <p>First of all thank you for giving me this opportunity to introduce myself. My name is Mritunjay Mishra. I am from Hata, Kushinagar, Gorakhpur
-                                 I have completed my Schooling in Indian Public School Hata Kushinagar and earn 73.83% marks in 10th And 78% marks in 12th
-                                 Then I have pursue B.Tech CSE with AI in Galgotias University in 2022-26 I belong to a joint family My hobbies are listening music and outdor Games 
-                                 My short term goal is to get job in reputed company and long term goal is to achieve good position likes yours where I can build my career and help the organizatio too. 
-                                 Thank you Very much.
-                                .</p>
-                            <!-- <p>Remember, your portfolio is a reflection of both your work and your personality. Be authentic, approachable, and confident.</p> -->
-                        </div>                        
-    
-                        <a href="#" class="btn-primary">Download CV</a>
-                    </div>
-                </div>
+    <section id="hobbies">
+        <h2 class="text-3xl font-bold mb-4">Hobbies</h2>
+        <ul class="list-disc pl-5">
+            <li>Reading Books</li>
+            <li>Playing Games</li>
+            <li>Music</li>
+        </ul>
+    </section>
+
+    <section id="resume" class="text-center">
+        <h2 class="text-3xl font-bold mb-4">Resume</h2>
+        <a href="assets/Mritunjay_Mishra_Resume.pdf" download="My_Resume.pdf" class="download-btn">Download CV</a>
+    </section>
+
+    <section id="certifications">
+        <h2 class="text-3xl font-bold mb-4">Certifications</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="cert-card">
+                <img src="assets/M1.png" alt="SQL" class="cert-img">
+                <h3>Database Programming with SQL</h3>
+                <a href="assets/SQL.pdf" download="SQL_Cert.pdf" class="download-btn">Download</a>
             </div>
-
-            <div class="about-inner">
-                <!-- <div class="service">
-                    <h2>What I do</h2>
-                    
-                    <div class="grid-item">
-                        <div class="item">
-                            <div class="item-icon">
-                                <ion-icon name="storefront-outline"></ion-icon>
-                            </div>
-
-                            <div class="item-wrapper">
-                                <!-- Examples --
-                                <h3>E-commerce</h3>
-                                <p>I can create, maintain, and enhance platforms that cater to businesses and their customers. I worked closely with designers, other developers, and stakeholders to align the website with business goals and user needs.</p>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="item-icon">
-                                <ion-icon name="reader-outline"></ion-icon>
-                            </div>
-
-                            <div class="item-wrapper">
-                                <!-- Examples --
-                                <h3>Copywritting</h3>
-                                <p>I can create user-focused content that resonates with the target audience by strategically place CTAs throughout the website—whether it's encouraging users to sign up, make a purchase, or explore more content.</p>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="item-icon">
-                                <ion-icon name="desktop-outline"></ion-icon>
-                            </div>
-
-                            <div class="item-wrapper">
-                                <!-- Examples --
-                                <h3>Web Design</h3>
-                                <p>I can work on the visual part of the website - the pages visitors see and interact with. I design the layout, integrate graphics, and use HTML, CSS, and JavaScript to enhance the site's user interface. Also, I ensure that websites adapt gracefully to different screen sizes by adjusting font sizes, image dimensions, and navigation menus to provide a consistent experience regardless of the user's device.</p>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="item-icon">
-                                <ion-icon name="file-tray-stacked-outline"></ion-icon>
-                            </div>
-
-                            <div class="item-wrapper">
-                                <!-- Examples --
-                                <h3>Management</h3>
-                                <p>I can collaborate with project managers to define project scope, objectives, and deliverables. This contribute to project timelines by estimating development time and ensuring realistic deadlines.</p>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
-
+            <div class="cert-card">
+                <img src="assets/M2.jpg" alt="Python Full Stack" class="cert-img">
+                <h3>Python Full Stack</h3>
+                <a href="assets/Python.pdf" download="Pythonfullstack_Cert.pdf" class="download-btn">Download</a>
+            </div>
+            <div class="cert-card">
+                <img src="assets/M3.png" alt="GraphTheory" class="cert-img">
+                <h3>GRAPHTHEORY (ALGO UNIVERSITY)</h3>
+                <a href="assets/ALGO.pdf" download="Graphtheory_Cert.pdf" class="download-btn">Download</a>
+            </div>
             
-        </section>
+        </div>
+    </section>
 
-        <section class="resume page">
-            <h1 class="section-heading">Resume</h1>
-            <h4 class="section-sub-heading">#</h4>
-
-            <div class="resume-row">
-                <div class="wrapper">
-                    <div class="education">
-                        <h2>Education</h2>
-                        <div class="grid-item">
-                            <h4 class="year">2017-2019</h4>
-                            <h4 class="education-name">10 th</h4>
-                            <p class="company">Indian Public School</p>
-                            <p class="education-description"> I have completing my 10th in  Indian Public School, Hata, Kushinagar in 2019 and earn  percentage of 73.83. </p>
-
-                            <div class="divider"></div>
-                        </div>
-
-                        <div class="grid-item">
-                            <h4 class="year">2019-2021</h4>
-                            <h4 class="education-name">12 th</h4>
-                            <p class="company">Indian Public School</p>
-                            <p class="education-description"> I have completing my 12th in  Indian Public School, Hata, Kushinagar in 2021 and earn  percentage of 78. </p>
-
-                            <div class="divider"></div>
-                        </div>
-
-                        <div class="grid-item">
-                            <h4 class="year">2022</h4>
-                            <h4 class="education-name">B Tech</h4>
-                            <p class="company">Galgotias University</p>
-                            <p class="education-description"> I have purcess btech computer science  speclisation with AI  in Galgotias Universit in 2022. This is complet in 2026. </p>
-
-                            <div class="divider"></div>
-                        </div>
-
-                       
-
-                    </div>
-
-                    <div class="experience">
-                    </div>
-                </div>
-
-                <div class="wrapper">
-                   
-
-                    <div class="coding-skill">
-                        <h2>Coding Skills</h2>
-
-                        <div class="progress-detail">
-                            <div class="progress-name">Python</div>
-                            <div class="progress-percent">80%</div>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 80%;"></div>
-                        </div>
-
-
-                        <div class="progress-detail">
-                            <div class="progress-name">HTML</div>
-                            <div class="progress-percent">95%</div>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 95%;"></div>
-                        </div>
-                        
-                        <div class="progress-detail">
-                            <div class="progress-name">CSS</div>
-                            <div class="progress-percent">90%</div>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 90%;"></div>
-                        </div>
-
-                        <div class="progress-detail">
-                            <div class="progress-name">Bootstrap</div>
-                            <div class="progress-percent">85%</div>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 85%;"></div>
-                        </div>
-                       
-                        <div class="progress-detail">
-                            <div class="progress-name">Javascript</div>
-                            <div class="progress-percent">70%</div>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 70%;"></div>
-                        </div>
-
-                        <div class="progress-detail">
-                            <div class="progress-name">React</div>
-                            <div class="progress-percent">60%</div>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 60%;"></div>
-                        </div>
-
-
-                    </div>
-                </div>
+    <section id="projects">
+        <h2 class="text-3xl font-bold mb-4 text-center">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="project-card" onclick="showDownload(1)">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a1edeb3b-6173-4be5-a3ec-a8fd32429313.png" alt="Screenshot of a modern e-commerce website with product listings, shopping cart, and user-friendly navigation interface" class="w-full rounded">
+                <h3 class="mt-2 font-bold">E-Commerce Site</h3>
             </div>
-
-            <a href="#" class="btn-primary">Download CV</a>
-        </section>
-
-        <section class="portfolio page ">
-            <h1 class="section-heading">Portfolio</h1>
-            <h4 class="section-sub-heading">My Works</h4>
-
-            <ul class="filter-box">
-                <li class="filter-item active">All</li>
-                <li class="filter-item">Media</li>
-                <!-- <li class="filter-item">Mockups</li>
-                <li class="filter-item">SoundCloud</li>
-                <li class="filter-item">Vimeo Videos</li>
-                <li class="filter-item">Youtube Videos</li> -->
-            </ul>
-
-            <div class="portfolio-items-group">
-                <!-- <div class="portfolio-item active">
-                    <img src="https://i.postimg.cc/N0mGDRsP/1.jpg" alt="image" class="item-img">
-                    <h4 class="item-name">SoundCloud Audio</h4>
-                    <div class="item-icon">
-                        <ion-icon name="volume-high"></ion-icon>
-                    </div>
-                    <div class="item-category">SoundCloud</div>
-                </div> -->
-
-                <div class="portfolio-item active">
-                    <img src="#" alt="image" class="item-img">
-                    <h4 class="item-name">Media Project 1</h4>
-                    <div class="item-icon">
-                        <ion-icon name="film"></ion-icon>
-                    </div>
-                    <div class="item-category">Media</div>
-                </div>
-                
-                <!-- <div class="portfolio-item active">
-                    <img src="https://i.postimg.cc/CLrDRzwQ/3.jpg" alt="image" class="item-img">
-                    <h4 class="item-name">Vimeo Video 1</h4>
-                    <div class="item-icon">
-                        <ion-icon name="videocam"></ion-icon>
-                    </div>
-                    <div class="item-category">Vimeo Videos</div>
-                </div> -->
-
-                <div class="portfolio-item active">
-                    <img src="#" alt="image" class="item-img">
-                    <h4 class="item-name">Media Project 2</h4>
-                    <div class="item-icon">
-                        <ion-icon name="film"></ion-icon>
-                    </div>
-                    <div class="item-category">Media</div>
-                </div>
-
-                <!-- <div class="portfolio-item active">
-                    <img src="https://i.postimg.cc/1tKVszWM/5.jpg" alt="image" class="item-img">
-                    <h4 class="item-name">Mockup Design 1</h4>
-                    <div class="item-icon">
-                        <ion-icon name="image"></ion-icon>
-                    </div>
-                    <div class="item-category">Mockups</div>
-                </div>
-
-                <div class="portfolio-item active">
-                    <img src="https://i.postimg.cc/x8TJCShQ/6.jpg" alt="image" class="item-img">
-                    <h4 class="item-name">Youtube Video 1</h4>
-                    <div class="item-icon">
-                        <ion-icon name="videocam"></ion-icon>
-                    </div>
-                    <div class="item-category">Youtube Videos</div>
-                </div> -->
+            <div class="project-card" onclick="showDownload(2)">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0b362daa-123d-4f2f-847f-1137f11c4d6a.png" alt="Mobile app interface showing task list with colorful icons, checkboxes for completion, and priority indicators" class="w-full rounded">
+                <h3 class="mt-2 font-bold">Task Manager App</h3>
             </div>
-        </section>
-
-        <section class="certificate page">
-            <h1 class="section-heading">Certificate</h1>
-            <h4 class="section-sub-heading">My Diary</h4>
-
-            <div class="certificate-container">
-                <div class="certificate-post">
-                    <div class="certificate-img-box">
-                        <img src="z/M2.jpg" alt="certificate image">
-                    </div>
-                    <div class="certificate-category">Virtual Internship</div>
-                    <div class="certificate-info">
-                        <p class="publish-date">During Oct - Dec 2024</p>
-                        <a href="#" class="certificate-title">Python Full Stack</a>
-                    </div>
-                </div>
-
-                <!-- <div class="certificate-post">
-                    <div class="certificate-img-box">
-                        <img src="https://i.postimg.cc/44vXZ2bW/blog-post-2.jpg" alt="certificate image">
-                    </div>
-                    <div class="certificate-category">E-Commerce</div>
-                    <div class="certificate-info">
-                        <p class="publish-date">02 Apr 2023</p>
-                        <a href="#" class="certificate-title">Designing the Perfect Feature Comparison Table</a>
-                    </div>
-                </div>
-
-                <div class="certificate-post">
-                    <div class="certificate-img-box">
-                        <img src="https://i.postimg.cc/yYTwxkdR/blog-post-3.jpg" alt="certificate image">
-                    </div>
-                    <div class="certificate-category">E-Commerce</div>
-                    <div class="certificate-info">
-                        <p class="publish-date">25 Mar 2023</p>
-                        <a href="#" class="certificate-title">An Overview of E-Commerce Platforms</a>
-                    </div>
-                </div>
-
-                <div class="certificate-post">
-                    <div class="certificate-img-box">
-                        <img src="https://i.postimg.cc/DwjKz8ZZ/blog-post-5.jpg" alt="certificate image">
-                    </div>
-                    <div class="certificate-category">Design</div>
-                    <div class="certificate-info">
-                        <p class="publish-date">19 Mar 2023</p>
-                        <a href="#" class="certificate-title">Why I switched to sketch for UI design</a>
-                    </div>
-                </div>
-
-                <div class="certificate-post">
-                    <div class="certificate-img-box">
-                        <img src="https://i.postimg.cc/s2LZdYZ4/blog-post-6.jpg" alt="certificate image">
-                    </div>
-                    <div class="certificate-category">UI</div>
-                    <div class="certificate-info">
-                        <p class="publish-date">10 Mar 2023</p>
-                        <a href="#" class="certificate-title">Creative and Innovative Navigation Designs</a>
-                    </div>
-                </div>
-
-                <div class="certificate-post">
-                    <div class="certificate-img-box">
-                        <img src="https://i.postimg.cc/8z72Wj8n/blog_post_1.jpg" alt="certificate image">
-                    </div>
-                    <div class="certificate-category">UI</div>
-                    <div class="certificate-info">
-                        <p class="publish-date">01 Mar 2023</p>
-                        <a href="#" class="certificate-title">6 Easy Steps to Better Icon Design</a>
-                    </div>
-                </div> -->
+            <div class="project-card" onclick="showDownload(3)">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/96b75e19-51cd-43af-b1dd-5c01e068e4ba.png" alt="Dashboard with graphs and charts for analytics data visualization, displaying metrics like user activity and sales trends" class="w-full rounded">
+                <h3 class="mt-2 font-bold">Data Dashboard</h3>
             </div>
-        </section>
-
-        <section class="contact page">
-            <h1 class="section-heading">Contact</h1>
-            <h4 class="section-sub-heading">Get in Touch</h4>
-
-            <div class="contact-info">
-                <div class="info-box">
-                    <ion-icon name="call-outline"></ion-icon>
-                    <p>7607197286</p>
-                </div>
-
-                <div class="info-box">
-                    <ion-icon name="location-outline"></ion-icon>
-                    <p>HATA,KUSHINAGAR,UTTAR PRADESH, INDIA</p>
-                </div>
-
-                <div class="info-box">
-                    <ion-icon name="mail-outline"></ion-icon>
-                    <p>mritunjaymishra7607197286@gmail.com</p>
-                </div>
-
-                <div class="info-box">
-                    <ion-icon name="checkmark-outline"></ion-icon>
-                    <p>Hire Available</p>
-                </div>
+        </div>
+        <div id="downloadModal" class="fixed inset-0 bg-black bg-opacity-50 modal-closed items-center justify-center">
+            <div class="bg-white p-6 rounded-lg text-center">
+                <h3 id="modalTitle"></h3>
+                <a id="downloadLink" href="#" download class="download-btn mt-4 inline-block">Download Source Code</a>
+                <button onclick="closeModal()" class="ml-4 text-gray-600">Close</button>
             </div>
+        </div>
+    </section>
 
-            <div class="contact-form">
-                <form action="">
-                    <div class="form-grid">
-                        <div class="grid-left">
-                            <input type="text" required placeholder="Full Name" autocomplete="off">
-                            <input type="email" required placeholder="Email Address" autocomplete="off">
-                            <input type="text" required placeholder="Subject" autocomplete="off">
-                        </div>
-
-                        <div class="grid-right">
-                            <textarea placeholder="Your Message"></textarea>
-                        </div>
-                    </div>
-
-                    <a href="#" class="btn-primary">Send Message</a>
-                </form>
+    <section id="contact">
+        <h2 class="text-3xl font-bold mb-4 text-center">Contact Me</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+                <h3>Get in Touch</h3>
+                <p>Email: <a href="mailto:mritunjaymishra7607197286@gmail.com">mritunjaymishra7607197286@gmail.com</a></p>
+                <p>Phone: <a href="tel:+917607197286">+91 7607197286</a></p>
+                <p>Website: <a href="https://mywebsite.com">mywebsite.com</a></p>
             </div>
-        </section>
-    </div>
+            <form class="bg-gray-100 p-4 rounded">
+                <input type="text" placeholder="Name" class="w-full p-2 mb-2 border rounded">
+                <input type="email" placeholder="Email" class="w-full p-2 mb-2 border rounded">
+                <textarea placeholder="Message" class="w-full p-2 mb-2 border rounded"></textarea>
+                <button class="download-btn">Send</button>
+            </form>
+        </div>
+    </section>
 
-    
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://wa.me/7607197286" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/mritunjay-mishra-92905a268" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Mritunjaymishra2004" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://facebook.com/myprofile" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+    </footer>
+
+    <button onclick="topFunction()" id="backToTopBtn" title="Go to top">
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 17a1 1 0 01-.707-.293l-7-7a1 1 0 111.414-1.414L10 15.586l6.293-6.293A1 1 0 1117.707 5.707l-7 7A1 1 0 0110 17z" clip-rule="evenodd"></path>
+        </svg>
+    </button>
 
     <script src="script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
