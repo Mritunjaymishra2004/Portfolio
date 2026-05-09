@@ -62,7 +62,7 @@ portfolio/
 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/Mritunjaymishra2004/portfolio.git
 Open project folder
 Run index.html using Live Server
 
