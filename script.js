@@ -1,60 +1,281 @@
-document.addEventListener("DOMContentLoaded", function() {
-            // Scroll to section on nav click
-            const navLinks = document.querySelectorAll('nav a');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href').substring(1);
-                    const targetSection = document.getElementById(targetId);
-                    if (targetSection) {
-                        targetSection.scrollIntoView({ behavior: 'smooth' });
-                    }
-                });
-            });
-        });
+// Typing Animation
 
-        function showDownload(projectId) {
-            const modal = document.getElementById('downloadModal');
-            const title = document.getElementById('modalTitle');
-            const link = document.getElementById('downloadLink');
-            if (projectId === 1) {
-                title.textContent = 'E-Commerce Site Source Code';
-                link.href = '#';
-            } else if (projectId === 2) {
-                title.textContent = 'Task Manager App Source Code';
-                link.href = '#';
-            } else if (projectId === 3) {
-                title.textContent = 'Data Dashboard Source Code';
-                link.href = '#';
-            }
-            modal.classList.remove('modal-closed');
-            modal.classList.add('modal-open');
-        }
-        function closeModal() {
-            document.getElementById('downloadModal').classList.add('modal-closed');
-            document.getElementById('downloadModal').classList.remove('modal-open');
+const typingText = document.querySelector('.typing');
+
+const words = [
+    'Software Engineer',
+    'Web Developer',
+    'Frontend Developer',
+    'Python Developer'
+];
+
+let wordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function typeEffect() {
+
+    const currentWord = words[wordIndex];
+
+    if (!isDeleting) {
+
+        typingText.textContent =
+            currentWord.substring(0, charIndex + 1);
+
+        charIndex++;
+
+        if (charIndex === currentWord.length) {
+
+            isDeleting = true;
+
+            setTimeout(typeEffect, 1000);
+
+            return;
         }
 
-        // Get the button
-        let mybutton = document.getElementById("backToTopBtn");
+    } else {
 
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {scrollFunction()};
+        typingText.textContent =
+            currentWord.substring(0, charIndex - 1);
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
+        charIndex--;
 
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-<<<<<<< HEAD
+        if (charIndex === 0) {
+
+            isDeleting = false;
+
+            wordIndex =
+                (wordIndex + 1) % words.length;
         }
-=======
+    }
+
+    setTimeout(typeEffect, isDeleting ? 60 : 120);
+}
+
+typeEffect();
+
+
+// Mobile Menu
+
+const menuBtn =
+    document.querySelector('.menu-btn');
+
+const navLinks =
+    document.querySelector('.nav-links');
+
+menuBtn.addEventListener('click', () => {
+
+    navLinks.classList.toggle('active');
+
+});
+
+
+// Education Popup
+
+function showEducation(
+    degree,
+    college,
+    year,
+    marks
+){
+
+    document.getElementById(
+        'educationPopup'
+    ).style.display = 'flex';
+
+    document.getElementById(
+        'eduDegree'
+    ).innerText = degree;
+
+    document.getElementById(
+        'eduCollege'
+    ).innerText = college;
+
+    document.getElementById(
+        'eduYear'
+    ).innerText = year;
+
+    document.getElementById(
+        'eduMarks'
+    ).innerText =
+        'CGPA / Percentage : ' + marks;
+}
+
+
+function closeEducationPopup(){
+
+    document.getElementById(
+        'educationPopup'
+    ).style.display = 'none';
+}
+
+
+
+
+// Skill Popup
+
+function showSkill(skill, percent) {
+
+    document.getElementById('skillPopup')
+        .style.display = 'flex';
+
+    document.getElementById('skillName')
+        .innerText = skill;
+
+    document.getElementById('skillPercent')
+        .innerText = percent + '% Knowledge';
+
+    document.getElementById('progress')
+        .style.width = percent + '%';
+}
+
+
+function closePopup() {
+
+    document.getElementById('skillPopup')
+        .style.display = 'none';
+
+    document.getElementById('progress')
+        .style.width = '0';
+}
+
+
+// Show Certificates
+
+function toggleCertificates() {
+
+    const container =
+        document.getElementById(
+            'certificateContainer'
+        );
+
+    if (container.style.display === 'grid') {
+
+        container.style.display = 'none';
+
+    } else {
+
+        container.style.display = 'grid';
+    }
+}
+
+
+// Project Scroll Animation
+
+const projects =
+    document.querySelectorAll('.hidden-project');
+
+window.addEventListener('scroll', () => {
+
+    projects.forEach(project => {
+
+        const projectTop =
+            project.getBoundingClientRect().top;
+
+        if (projectTop < window.innerHeight - 100) {
+
+            project.classList.add('show-project');
         }
->>>>>>> 69cac74f8fe01f0c5ce49c11f27672d8d56e5894
+    });
+
+});
+
+
+// Active Navbar Scroll Effect
+
+const sections =
+    document.querySelectorAll("section");
+
+const navItems =
+    document.querySelectorAll(".nav-links a");
+
+window.addEventListener("scroll", () => {
+
+    let current = "";
+
+    sections.forEach(section => {
+
+        const sectionTop = section.offsetTop;
+
+        if (pageYOffset >= sectionTop - 200) {
+
+            current =
+                section.getAttribute("id");
+        }
+    });
+
+    navItems.forEach(a => {
+
+        a.classList.remove("active");
+
+        if (a.getAttribute("href") === `#${current}`) {
+
+            a.classList.add("active");
+        }
+    });
+});
+
+
+// Section Reveal Animation
+
+const allSections =
+    document.querySelectorAll('.section');
+
+window.addEventListener('scroll', () => {
+
+    allSections.forEach(section => {
+
+        const sectionTop =
+            section.getBoundingClientRect().top;
+
+        if (sectionTop < window.innerHeight - 100) {
+
+            section.classList.add('show-section');
+        }
+    });
+});
+
+
+// Close Mobile Menu After Click
+
+navItems.forEach(item => {
+
+    item.addEventListener('click', () => {
+
+        navLinks.classList.remove('active');
+
+    });
+});
+
+
+// Scroll To Top Button
+
+const scrollBtn =
+    document.createElement("button");
+
+scrollBtn.innerHTML = "↑";
+
+scrollBtn.classList.add("scroll-top");
+
+document.body.appendChild(scrollBtn);
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 300) {
+
+        scrollBtn.style.display = "block";
+
+    } else {
+
+        scrollBtn.style.display = "none";
+    }
+});
+
+scrollBtn.addEventListener("click", () => {
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+});
